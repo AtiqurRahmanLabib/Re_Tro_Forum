@@ -27,8 +27,8 @@
           Share your favorite opinion and win and wp <br> forum coffee mug!
         </p>
         <div class="flex justify-between items-center w-[400px] h-[46px] rounded-[50px] bg-[#FFFFFF] mt-4">
-          <input class="ml-4 h-[40px] w-[250px]" type="text" placeholder="Search here anything">
-          <button class="bg-[#797DFC] mr-1  text-[#FFFFFF] rounded-[46px] w-[121px] h-[40px] ">search</button>
+          <input id="inputFeild" class="ml-4 h-[40px] w-[250px] border focus:border-transparent focus:outline-none border-none" type="text" placeholder="Search here anything">
+          <button onclick="searchFeild()" class="bg-[#797DFC] mr-1  text-[#FFFFFF] rounded-[46px] w-[121px] h-[40px] ">search</button>
         </div>
       </div>
 
@@ -36,8 +36,6 @@
         <img class="w-full h-full object-cover" src="./images/bgbanner.png" alt="">
       </div>
     </div>
-
-
     </div>
   </header>
   <main>
@@ -47,20 +45,26 @@
         <p class="text-[18px] text-center text-[#12132D99]">Yes, you can run unit tests and view the results directly
           within the app. The <br> integrated testing features allow for a streamlined .</p>
       </div>
-      <!-- post container -->
-      <div>
-        <!-- post -->
-
-        <div>
-          <div>
-            
-          </div>
+      
+      <div class="flex w-[1300px] justify-between mx-auto ">
+        <div class="mt-7 flex justify-between w-[1300px]">
+              <div id="post-container">
+              </div>
+              <div class="w-[374px] h-[465px] rounded-[24px] bg-[#12132D0D] mt-7 ">
+              </div>
         </div>
-        <!-- read mark -->
-        <div>
 
-        </div>
       </div>
+<div>
+  
+
+  <div class="spinner text-center"></div>
+
+<!-- read mark -->
+  <div>
+
+  </div>
+</div>
 
     </section>
     <div class="w-[1300px] h-[350px] bg-[#12132D] rounded-[32px] mx-auto mt-5 flex">
@@ -99,6 +103,7 @@
     <hr class="border-t-4 border-customBlue w-[1300px] mx-auto">
     <p class="font-light text-[18px] text-[#12132D80] text-center">2017, All Rights Reserved.</p>
   </footer>
+  <script src="./script/index.js"></script>
 </body>
 
 </html>
